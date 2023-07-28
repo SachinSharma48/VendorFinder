@@ -1,0 +1,22 @@
+import csv
+import openpyxl
+from googleplaces import GooglePlaces, lang
+
+
+# Enable further details API call
+DETAILS_ENABLED = True
+
+# --- CSV Setup ---
+csv_file = 'results.csv'
+csv_header = ["Name", "Google Places ID", "Phone Number", "Address", "Website", "URL", "Rating", "Orgin_LAt_Long", "PlaceLatlong", "Place Types", "Opening Hours"]
+
+# Open the Excel file
+excel_file = 'LatilongFile.xlsx'
+workbook = openpyxl.load_workbook(excel_file)
+worksheet = workbook.active
+
+# Get the column indices for latitude and longitude
+lat_col = 1  # Column index for latitude (starting from 1)
+long_col = 2  # Column index for longitude (starting from 1)
+google_places = GooglePlaces(GOOGLE_PLACES_API_KEY)
+queries = ["National Transporter", "Logistic", "Roadlines","Transporter Vendor"] 
