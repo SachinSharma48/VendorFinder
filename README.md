@@ -13,3 +13,5 @@ The information extracted includes the business name, physical address, contact 
 In essence, the Vendor Search Tool empowers users to effortlessly access and compile essential business details in a user-friendly format, streamlining the process of making informed decisions and discovering nearby resources.
 
 **We harness the Google Places API for this task**
+
+#>>>>>>>>>>>>>>>>>>>>>.
